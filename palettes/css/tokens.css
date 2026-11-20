@@ -1,0 +1,7 @@
+:root{--pitch-a:#1E7A4C;--pitch-b:#1A6E44;--line:#F3F7F5;--kit-home:#F2F4EF;--kit-away:#1C2230;--kit-ring:#F2F4EF;--kit-gk:#C9A3FF;--card-yellow:#FFD23D;--card-red:#E5322D}
+[data-palette=nuit]{--bg0:#0F1424;--s1:#161C33;--s2:#1F2744;--bd:#2B3560;--t1:#F2F4FB;--t2:#B8C0DC;--t3:#8F99BF;--acc:#FF7A1A;--ink:#0A0D18;--acc2:#FF9A4D;--tac:#2EC5E6;--ok:#3DD68C;--warn:#FFC23D;--err:#FF5C6C}
+[data-palette=petrole]{--bg0:#101A20;--s1:#192830;--s2:#223640;--bd:#40545C;--t1:#F3F7F5;--t2:#B7C6C8;--t3:#8EA3A7;--acc:#D7FF5A;--ink:#101A20;--acc2:#FF765E;--tac:#65DCE6;--ok:#64DDAA;--warn:#FFB86B;--err:#FF6B78}
+[data-palette=graphite]{--bg0:#1A1D22;--s1:#24282F;--s2:#2F353E;--bd:#3E4652;--t1:#F4F6F8;--t2:#B4BCC4;--t3:#8B939C;--acc:#FFB020;--ink:#121416;--acc2:#FFC14D;--tac:#3DDCFF;--ok:#4ADE80;--warn:#FBBF24;--err:#F87171}
+/* N3 (finitions) : voile, reflets, ombres, flou. Désactivé = surfaces opaques, aucun effet. */
+:root{--n3-blur:0px;--n3-shadow:none;--n3-shadow-in:none;--n3-glow:none;--glass-mix:100%}
+.n3{--n3-blur:16px;--n3-shadow:6px 6px 14px rgba(0,0,0,.48),-4px -4px 10px rgba(255,255,255,.06);--n3-shadow-in:inset 4px 4px 9px rgba(0,0,0,.48),inset -3px -3px 8px rgba(255,255,255,.06);--n3-glow:0 0 18px color-mix(in srgb,var(--acc) 32%,transparent);--glass-mix:72%}

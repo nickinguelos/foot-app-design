@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="fr" data-palette="nuit">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Football App — comparatif des palettes (AICOL-4)</title>
+<link rel="stylesheet" href="css/tokens.css">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="bar">
+ <b>Palette</b>
+ <div class="seg">
+  <button class="chip" data-pal="nuit">Nuit de stade</button>
+  <button class="chip" data-pal="petrole">Pétrole électrique</button>
+  <button class="chip" data-pal="graphite">Graphite ambre</button>
+ </div>
+ <button class="chip" id="n3" aria-pressed="false">Finitions N3 : désactivées</button>
+</div>
+<main>
+<h1>Comparatif des palettes</h1>
+<div class="warnbox">Maquette de comparaison, pas une décision. Aucune couleur n'est validée (AICOL-4). Mêmes écrans, mêmes tokens ; seule la palette change. Les maillots, la pelouse et les formes sont identiques pour les trois afin de comparer à égalité. Écrans en paysage ; les tailles de texte s'adaptent à la largeur.</div>
+
+<h2>1. Icône d'application</h2>
+<p class="note">Lisibilité en miniature : 96, 48 et 29 px.</p>
+<div class="row" id="icons"></div>
+
+<h2>2. Écran de lancement (hors-match)</h2>
+<p class="note">Hors-match : verre et relief permis (finitions N3).</p>
+<div class="scr launch">
+ <div class="abs logo"><i data-icon></i><span>FOOT<span class="tag">jouer · comprendre · progresser</span></span></div>
+ <div class="abs cards">
+  <div class="card glass"><span>Défi tactique du jour<br><small>Pressing haut · 3 min</small></span><b style="color:var(--acc2)">+120</b></div>
+  <div class="card glass"><span>Reprendre le match<br><small>2–1 · 63e minute</small></span><b style="color:var(--tac)">▶</b></div>
+  <div class="card glass"><span>Mes profils<br><small>3 packs actifs</small></span><b>›</b></div>
+ </div>
+ <button class="abs btn pri cta">Jouer un match</button>
+</div>
+
+<h2>3. Vue de match avec HUD (en match)</h2>
+<p class="note">En match : surfaces opaques (solid-100), aucun flou, relief nul. Un seul bouton d'action principal ; secondaires dans la barre contextuelle.</p>
+<div class="scr">
+ <svg class="pitch" viewBox="0 0 200 100" preserveAspectRatio="none" aria-label="terrain">
+  <rect width="200" height="100" fill="var(--pitch-a)"/>
+  <g fill="var(--pitch-b)"><rect x="0" width="25" height="100"/><rect x="50" width="25" height="100"/><rect x="100" width="25" height="100"/><rect x="150" width="25" height="100"/></g>
+  <g fill="none" stroke="var(--line)" stroke-width=".6"><rect x="6" y="6" width="188" height="88"/><line x1="100" y1="6" x2="100" y2="94"/><circle cx="100" cy="50" r="13"/><rect x="6" y="28" width="22" height="44"/><rect x="172" y="28" width="22" height="44"/></g>
+  <path class="tacline" d="M118 60 C130 52 140 46 156 40"/>
+  <path class="tacline" d="M156 40 l-4 0.5 M156 40 l-1.5 3.6" style="stroke-dasharray:none"/>
+  <g id="pl"></g>
+ </svg>
+ <div class="abs hud solid"><span>BLEU</span><span>2 – 1</span><span>ROUGE</span><small>63:12</small></div>
+ <button class="abs btn solid round pause" aria-label="Pause">❚❚</button>
+ <div class="abs ctx solid"><b>▲</b> Passe en profondeur disponible</div>
+ <div class="abs mctl">
+  <button class="btn solid round" aria-label="Changer de joueur">⇄</button>
+  <button class="btn solid round" aria-label="Tir">◎</button>
+  <button class="btn pri" style="min-height:10cqw;padding:0 4cqw;font-size:3cqw">Passe</button>
+ </div>
+</div>
+
+<h2>4. Pause et actions contextuelles</h2>
+<p class="note">La pause arrête le jeu : le verre est permis sur le panneau ; l'arrière-plan est assombri.</p>
+<div class="scr">
+ <svg class="pitch" viewBox="0 0 200 100" preserveAspectRatio="none"><rect width="200" height="100" fill="var(--pitch-a)"/><g fill="var(--pitch-b)"><rect width="25" height="100"/><rect x="50" width="25" height="100"/><rect x="100" width="25" height="100"/><rect x="150" width="25" height="100"/></g><g fill="none" stroke="var(--line)" stroke-width=".6"><rect x="6" y="6" width="188" height="88"/><line x1="100" y1="6" x2="100" y2="94"/><circle cx="100" cy="50" r="13"/></g></svg>
+ <div class="abs dim"></div>
+ <div class="abs panel glass">
+  <h3>Pause</h3>
+  <button class="btn pri">Reprendre</button>
+  <button class="btn">↺ Rembobiner</button>
+  <button class="btn">Remplacements</button>
+  <button class="btn">Réglages</button>
+ </div>
+</div>
+
+<h2>5. Carte de pack premium (boutique)</h2>
+<div class="pack"><span class="tg">PREMIUM</span><h3>Pack Pressing haut</h3><p>12 profils tactiques · 6 défis guidés</p><div class="buy"><span style="color:var(--tac);font-weight:700">◆ 6 défis</span><button class="pbtn">Obtenir</button></div></div>
+
+<h2>6. Contrôles : états, cartons, échantillons</h2>
+<p class="note">Point sensible : l'accent d'action, l'avertissement et le carton jaune ne doivent pas se confondre. Les états portent aussi une icône.</p>
+<div class="states">
+ <span class="st ok" style="border-color:var(--ok)">✔ Succès</span>
+ <span class="st wn" style="border-color:var(--warn)">⚠ Avertissement</span>
+ <span class="st er" style="border-color:var(--err)">✖ Erreur</span>
+ <button class="pbtn">Action principale</button>
+ <span class="cardsq" style="background:var(--card-yellow)" title="carton jaune"></span>
+ <span class="cardsq" style="background:var(--card-red)" title="carton rouge"></span>
+</div>
+<p class="note" style="margin-top:14px">Échantillons de la palette active :</p>
+<div class="sw" id="sw"></div>
+</main>
+<script>
+/* éléments générés : icône, joueurs, échantillons */
+function iconSVG(){return '<svg viewBox="0 0 100 100" width="100%" height="100%"><rect width="100" height="100" fill="var(--bg0)"/><circle cx="50" cy="50" r="30" fill="none" stroke="var(--acc)" stroke-width="9"/><path d="M20 50 H80" stroke="var(--acc2)" stroke-width="7"/><circle cx="50" cy="50" r="9" fill="var(--acc)"/></svg>';}
+document.querySelectorAll('[data-icon]').forEach(e=>{e.innerHTML=iconSVG();e.className='ico';});
+const ic=document.getElementById('icons');
+[96,48,29].forEach(s=>{const d=document.createElement('div');d.className='ico';d.style.cssText='width:'+s+'px;height:'+s+'px';d.innerHTML=iconSVG();ic.appendChild(d);});
+const P=[[40,50,'h',1,1],[70,30,'h',8,0],[70,70,'h',6,0],[100,50,'h',10,0],[118,60,'h',9,0],[60,50,'g',1,1],[130,40,'a',7,0],[145,62,'a',4,0],[156,40,'a',11,0],[165,52,'a',5,0]];
+let h='';P.forEach(p=>{const t=p[2],f=t=='h'?'var(--kit-home)':t=='a'?'var(--kit-away)':'var(--kit-gk)';const ring=t=='a'?'var(--kit-ring)':'#0A0D18';const tc=t=='a'?'#fff':'#101418';h+='<g><circle cx="'+p[0]+'" cy="'+p[1]+'" r="4.2" fill="'+f+'" stroke="'+ring+'" stroke-width="'+(t=='a'?1:.7)+'"/><text x="'+p[0]+'" y="'+(p[1]+1.6)+'" font-size="4.4" font-weight="700" text-anchor="middle" fill="'+tc+'">'+(p[3]||'')+'</text></g>';});
+h+='<circle cx="122" cy="57" r="1.6" fill="#fff" stroke="#000" stroke-width=".4"/>';
+document.getElementById('pl').innerHTML=h;
+const names=['bg0','s1','s2','bd','t1','t2','acc','acc2','tac','ok','warn','err'];
+const sw=document.getElementById('sw');
+names.forEach(n=>{const d=document.createElement('div');d.style.background='var(--'+n+')';d.style.color=['t1','t2','acc','acc2','tac','ok','warn','err'].includes(n)?'#101418':'var(--t1)';d.textContent=n;sw.appendChild(d);});
+</script>
+<script src="js/app.js"></script>
+</body>
+</html>
