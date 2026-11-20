@@ -1,0 +1,26 @@
+/* v2 Craie : ardoise sombre, craie, serif italique, traits pointillés */
+:root{--bg:#1D2925;--s1:#25342F;--s2:#2F403A;--bd:#6F837A;--t1:#F4EFE2;--t2:#CFC8B6;--t3:#A3AA9C;
+--acc:#F4EFE2;--acc-ink:#1D2925;--acc2:#F2D06B;--tac:#8FD0DE;--ok:#A9DC9A;--warn:#F0A35E;--err:#F28B82;
+--pa:#2A4A3A;--pb:#264434;--line:#F4EFE2;--home:#F4EFE2;--away:#E8946F;--gk:#8FD0DE;--ring:#1D2925;--num-home:#1D2925;--num-away:#1D2925;--num-gk:#1D2925;--sel:#F2D06B;
+--card-yellow:#FFD23D;--card-red:#E5322D;
+--font-display:Georgia,"Iowan Old Style","Palatino Linotype",serif;--font-body:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;
+--bs:dashed;--bw:.28cqw;--br:2cqw;--knob:#F4EFE2;--hint:#F4EFE2;--hint-bg:#1D2925;--panel-bg:#25342F;--dim:rgba(14,22,19,.55);--h1:italic 700 24px/1.2 Georgia,serif}
+body{background:#1D2925 repeating-linear-gradient(0deg,rgba(255,255,255,.012) 0 2px,transparent 2px 5px)}
+.btn,.card,.stick,.hud,.panel{border-width:max(1.5px,var(--bw))}
+.hud{border-width:0 0 max(1.5px,.3cqw) 0;border-style:dashed;border-color:var(--acc2);border-radius:0;background:var(--s1);padding:.8cqw 3cqw 1cqw}
+.hud .tm{font:italic 400 2cqw var(--font-display);text-transform:lowercase;letter-spacing:.04em}
+.hud .sc{font:italic 700 3.1cqw var(--font-display);color:var(--t1)}
+.hud .sc i{width:.8cqw;height:.8cqw;border-radius:50%;background:var(--acc2);display:block}
+.hud .clk{font:italic 400 1.9cqw var(--font-display);color:var(--acc2)}
+.btn{font-family:var(--font-display);font-style:italic}
+.btn.pri{border-style:solid;font-weight:700}
+.logo{font:italic 700 4.4cqw/1 Georgia,serif}
+.card b{font-family:var(--font-display);font-style:italic}
+.card{border-radius:var(--br)}
+.tacline,.lane{filter:none}
+.pack{border-style:dashed;border-width:2px;border-color:var(--acc2)}
+.pack h3{font-family:var(--font-display);font-style:italic}
+.pbtn{border-style:solid}
+.panel h3{font-family:var(--font-display);font-style:italic;font-weight:700}
+.stick{border-style:dashed}
+.top a{border-style:dashed}

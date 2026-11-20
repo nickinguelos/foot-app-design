@@ -1,0 +1,29 @@
+/* v3 Risographie : papier, deux encres (bleu, rose), ombres dures, décalage d'impression */
+:root{--bg:#F2EDE0;--s1:#FBF8F0;--s2:#E8E1D0;--bd:#1B1B3A;--t1:#1B1B3A;--t2:#44446A;--t3:#5F5F85;
+--acc:#2B3DDB;--acc-ink:#FFFFFF;--acc-bd:#1B1B3A;--acc2:#FF4F81;--acc2-ink:#1B1B3A;--acc2-text:#C21F4A;--tac:#1B7F9E;--tac-text:#1B7F9E;--ok:#1A7A52;--warn:#8A5A00;--err:#C21F4A;
+--pa:#A8D8B9;--pb:#9ACFAD;--line:#FBF8F0;--home:#2B3DDB;--away:#FF4F81;--gk:#FFC93C;--ring:#1B1B3A;--num-home:#FFFFFF;--num-away:#1B1B3A;--num-gk:#1B1B3A;--sel:#1B1B3A;
+--card-yellow:#FFD23D;--card-red:#E5322D;
+--bs:solid;--bw:.34cqw;--br:1.2cqw;--sh:.55cqw .55cqw 0 #1B1B3A;--sh-in:.15cqw .15cqw 0 #1B1B3A;--knob:#FF4F81;--hint:#1B1B3A;--hint-bg:#FBF8F0;--panel-bg:#FBF8F0;--dim:rgba(27,27,58,.35);--sh-panel:1cqw 1cqw 0 #1B1B3A;--br-panel:1.6cqw;--br-pack:10px;--br-btn:8px;--ico-sh:3px 3px 0 #1B1B3A;--h1:900 24px/1.1 "Arial Narrow","Helvetica Neue",Arial,sans-serif;--h3:900 3.2cqw/1.1 "Arial Narrow",Arial,sans-serif}
+body{background:var(--bg) radial-gradient(rgba(27,27,58,.13) 1px,transparent 1.3px) 0 0/7px 7px}
+h1,h2{text-transform:uppercase;letter-spacing:.04em;font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif}
+.top a,.sitchip{border:2px solid var(--bd);box-shadow:2px 2px 0 var(--bd)}
+.sitchip[aria-pressed=true]{background:var(--acc);color:#fff}
+.scr{border:2px solid var(--bd);box-shadow:4px 4px 0 var(--bd)}
+.launch{background:var(--bg) radial-gradient(rgba(27,27,58,.13) 1px,transparent 1.3px) 0 0/6px 6px}
+.btn{border-width:max(2px,var(--bw));font-weight:800;text-transform:uppercase;letter-spacing:.03em}
+.btn.pri{box-shadow:var(--sh)}
+.hud{gap:1.8cqw;padding:.7cqw 2.6cqw;border-width:max(2px,.34cqw);box-shadow:.5cqw .5cqw 0 var(--bd);transform:translateX(-50%) rotate(-1.2deg);border-radius:.8cqw}
+.hud .tm{font:900 1.7cqw "Arial Narrow",Arial,sans-serif;color:var(--t1)}
+.hud .sc{font:900 3cqw "Arial Narrow",Arial,sans-serif;color:var(--acc);text-shadow:.22cqw .18cqw 0 var(--acc2)}
+.hud .sc i{width:.7cqw;height:2.2cqw;background:var(--bd);display:block;transform:skewX(-18deg)}
+.hud .clk{font:900 1.7cqw Arial,sans-serif;background:var(--gk);border:max(1.5px,.25cqw) solid var(--bd);border-radius:99px;padding:.2cqw 1.1cqw;color:var(--t1)}
+.logo{font:900 4.6cqw/1 "Arial Narrow",Arial,sans-serif;text-transform:uppercase;text-shadow:.3cqw .25cqw 0 var(--acc2)}
+.logo .tag{text-shadow:none;text-transform:none}
+.card b{font-weight:900}
+.pack{border-width:2px;box-shadow:4px 4px 0 var(--bd);border-color:var(--bd)}
+.pack h3{text-transform:uppercase;font-family:"Arial Narrow",Arial,sans-serif;font-weight:900}
+.pbtn{border-width:2px;box-shadow:3px 3px 0 var(--bd)}
+.stick{box-shadow:var(--sh);border-width:max(2px,.34cqw)}
+.stick i{border:max(2px,.3cqw) solid var(--bd)}
+.lane,.tacline{stroke:var(--acc)!important}
+.warnbox{border-left-color:var(--acc)}

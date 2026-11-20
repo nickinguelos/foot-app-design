@@ -1,0 +1,27 @@
+/* v4 Aurore : pastel clair, relief doux (neumorphisme léger), verre givré hors-match. En match : surfaces opaques. */
+:root{--bg:#ECE9F8;--s1:#F5F3FC;--s2:#FFFFFF;--bd:#B8B3DA;--t1:#25244A;--t2:#55537A;--t3:#6F6D93;
+--acc:#5A48D8;--acc-ink:#FFFFFF;--acc2:#FF9A7A;--acc2-ink:#25244A;--acc2-text:#B4452A;--tac:#1C8F7E;--tac-text:#1A7A6C;--ok:#1A7A52;--warn:#8A5A00;--err:#C21F4A;
+--pa:#BFE3CF;--pb:#B2DAC4;--line:#FFFFFF;--home:#5A48D8;--away:#FF9A7A;--gk:#25244A;--ring:#25244A;--num-home:#FFFFFF;--num-away:#25244A;--num-gk:#FFFFFF;--sel:#5A48D8;
+--card-yellow:#FFD23D;--card-red:#E5322D;
+--bs:solid;--bw:1px;--br:2.6cqw;--sh:.7cqw .7cqw 1.6cqw rgba(110,100,170,.28),-.5cqw -.5cqw 1.2cqw rgba(255,255,255,.95);--sh-in:inset .5cqw .5cqw 1.1cqw rgba(110,100,170,.3),inset -.4cqw -.4cqw .9cqw rgba(255,255,255,.9);--knob:#5A48D8;--hint:#25244A;--hint-bg:#F5F3FC;--panel-bg:rgba(245,243,252,.72);--panel-blur:blur(14px);--dim:rgba(60,50,120,.22);--sh-panel:0 1.4cqw 4cqw rgba(80,70,150,.28);--br-panel:4cqw;--br-pack:22px;--br-btn:14px;--ico-sh:4px 4px 10px rgba(110,100,170,.3);--font-body:ui-rounded,"SF Pro Rounded",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;--h1:300 26px/1.15 ui-rounded,system-ui,sans-serif;--h3:300 3.4cqw/1.2 ui-rounded,system-ui,sans-serif;--launch-bg:linear-gradient(135deg,#D9D2F7 0%,#FCE0D6 55%,#D4F0E8 100%)}
+body{background:linear-gradient(160deg,#E4DFF8 0%,#F7E6DF 50%,#DDF2EB 100%) fixed}
+.top{background:rgba(245,243,252,.85);backdrop-filter:blur(8px)}
+.top a,.sitchip{box-shadow:3px 3px 8px rgba(110,100,170,.22),-2px -2px 6px #fff;border-color:transparent}
+.sitchip[aria-pressed=true]{box-shadow:var(--sh-in);background:var(--s1);color:var(--acc);border-color:var(--acc)}
+.scr{border-color:rgba(255,255,255,.7);box-shadow:0 6px 18px rgba(110,100,170,.22)}
+.btn{border-color:transparent;font-weight:600}
+.btn.pri{background:var(--acc);box-shadow:var(--sh)}
+.hud{gap:1.8cqw;padding:.6cqw 3cqw;border-radius:99px;border-color:transparent;background:#FFFFFF;box-shadow:.4cqw .4cqw .9cqw rgba(110,100,170,.22),-.3cqw -.3cqw .7cqw #fff}
+.hud .tm{font:600 1.5cqw ui-rounded,system-ui,sans-serif;letter-spacing:.14em}
+.hud .sc{font:200 3cqw ui-rounded,system-ui,sans-serif;color:var(--t1);gap:1.3cqw}
+.hud .sc b{font-weight:200}
+.hud .sc i{width:1cqw;height:1cqw;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));display:block}
+.hud .clk{font:500 1.6cqw ui-rounded,system-ui,sans-serif;color:var(--acc)}
+.logo{font:300 4.8cqw/1 ui-rounded,system-ui,sans-serif;letter-spacing:.14em}
+.card{border-color:rgba(255,255,255,.7);background:rgba(255,255,255,.55);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.stick{background:#F5F3FC;border-color:transparent;box-shadow:var(--sh-in)}
+.stick i{box-shadow:var(--sh)}
+.pack{border-color:rgba(255,255,255,.8);background:linear-gradient(160deg,#FFFFFF,#F1EEFB)}
+.pack h3{font-weight:300;letter-spacing:.02em}
+.pbtn{box-shadow:3px 3px 8px rgba(90,72,216,.35)}
+.lane,.tacline{stroke:var(--acc)!important}
