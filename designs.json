@@ -1,55 +1,13 @@
 {
   "updated": "2026-11-20",
-  "note": "Toutes les maquettes sont des PROPOSITIONS. Aucune couleur ni direction n'est validée (voir Notion, AICOL-4). Pour ajouter un design : créer designs/<id>/ puis ajouter une entrée ici.",
+  "note": "Toutes les maquettes sont des PROPOSITIONS. Aucune couleur ni direction n'est validée (voir Notion, AICOL-4). Pour ajouter un design : créer designs/<id>/ puis ajouter une entrée ici (chemin terminé par index.html).",
   "designs": [
-    {
-      "id": "v1-standard-comparatif",
-      "title": "v1 — Comparatif des 3 palettes standard",
-      "path": "designs/v1-standard-comparatif/",
-      "status": "Proposition (jugée trop standard)",
-      "date": "2026-11-20",
-      "author": "claude",
-      "summary": "Nuit de stade (indigo+orange), Pétrole électrique (pétrole+citron), Graphite ambre. Sombre, style jeu classique. Conservée comme point de comparaison.",
-      "palette": ["#161C33","#FF7A1A","#D7FF5A","#FFB020"]
-    },
-    {
-      "id": "v2-craie",
-      "title": "v2 — Craie (tableau tactique)",
-      "path": "designs/v2-craie/",
-      "status": "Proposition",
-      "date": "2026-11-20",
-      "author": "claude",
-      "summary": "Ardoise vert sombre, traits de craie, serif italique. Identité pédagogique et tactique : le jeu ressemble à un tableau de coach.",
-      "palette": ["#1D2925","#F4EFE2","#F2D06B","#E8946F","#8FD0DE"]
-    },
-    {
-      "id": "v3-risographie",
-      "title": "v3 — Risographie (deux encres)",
-      "path": "designs/v3-risographie/",
-      "status": "Proposition",
-      "date": "2026-11-20",
-      "author": "claude",
-      "summary": "Papier crème, deux encres (bleu et rose), ombres dures, décalage d'impression. Clair, graphique, très différent des jeux de foot.",
-      "palette": ["#F2EDE0","#1B1B3A","#2B3DDB","#FF4F81","#FFC93C"]
-    },
-    {
-      "id": "v4-aurore",
-      "title": "v4 — Aurore (pastel doux)",
-      "path": "designs/v4-aurore/",
-      "status": "Proposition",
-      "date": "2026-11-20",
-      "author": "claude",
-      "summary": "Dégradé pastel lilas, pêche, menthe ; relief neumorphique doux et verre givré hors-match. Reprend tes références, en clair.",
-      "palette": ["#ECE9F8","#25244A","#5A48D8","#FF9A7A","#1C8F7E"]
-    }
+    {"id":"v1-standard-comparatif","title":"v1 — Comparatif des 3 palettes standard","path":"designs/v1-standard-comparatif/index.html","status":"Proposition (jugée trop standard)","date":"2026-11-20","author":"claude","summary":"Nuit de stade (indigo+orange), Pétrole électrique (pétrole+citron), Graphite ambre. Sombre, style jeu classique. Conservée comme point de comparaison.","palette":["#161C33","#FF7A1A","#D7FF5A","#FFB020"]},
+    {"id":"v2-craie","title":"v2 — Craie (tableau tactique)","path":"designs/v2-craie/index.html","status":"Proposition","date":"2026-11-20","author":"claude","summary":"Ardoise vert sombre, traits de craie, serif italique. Identité pédagogique et tactique : le jeu ressemble à un tableau de coach.","palette":["#1D2925","#F4EFE2","#F2D06B","#E8946F","#8FD0DE"]},
+    {"id":"v3-risographie","title":"v3 — Risographie (deux encres)","path":"designs/v3-risographie/index.html","status":"Proposition","date":"2026-11-20","author":"claude","summary":"Papier crème, deux encres (bleu et rose), ombres dures, décalage d'impression. Clair, graphique, très différent des jeux de foot.","palette":["#F2EDE0","#1B1B3A","#2B3DDB","#FF4F81","#FFC93C"]},
+    {"id":"v4-aurore","title":"v4 — Aurore (pastel doux)","path":"designs/v4-aurore/index.html","status":"Proposition","date":"2026-11-20","author":"claude","summary":"Dégradé pastel lilas, pêche, menthe ; relief neumorphique doux et verre givré hors-match. Reprend tes références, en clair.","palette":["#ECE9F8","#25244A","#5A48D8","#FF9A7A","#1C8F7E"]}
   ],
   "archive": [
-    {
-      "id": "hello-world-chatgpt",
-      "title": "Hello World (ChatGPT) — test du serveur MCP",
-      "path": "archive/hello-world-chatgpt/",
-      "date": "2026-11-19",
-      "author": "chatgpt"
-    }
+    {"id":"hello-world-chatgpt","title":"Hello World (ChatGPT) — test du serveur MCP","path":"archive/hello-world-chatgpt/index.html","date":"2026-11-19","author":"chatgpt"}
   ]
 }
