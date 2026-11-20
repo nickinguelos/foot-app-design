@@ -1,119 +1,44 @@
 <!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f6e9e9">
-  <title>Hello World — Neumorphism</title>
-  <style>
-    :root {
-      color-scheme: light;
-      --surface: #f6e9e9;
-      --surface-deep: #f0dede;
-      --orange: #ff873d;
-      --orange-dark: #e96726;
-      --fuchsia: #e83f91;
-      --ink: #553c4d;
-      --muted: #967d8c;
-      --shadow-light: rgba(255,255,255,.92);
-      --shadow-dark: rgba(190,150,164,.42);
-    }
-    * { box-sizing: border-box; }
-    body {
-      min-height: 100vh;
-      margin: 0;
-      display: grid;
-      place-items: center;
-      padding: 28px;
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      color: var(--ink);
-      background:
-        radial-gradient(circle at 14% 18%, rgba(255,135,61,.16), transparent 28rem),
-        radial-gradient(circle at 88% 82%, rgba(232,63,145,.14), transparent 30rem),
-        var(--surface);
-    }
-    .shell { width: min(100%, 760px); text-align: center; }
-    .eyebrow {
-      display: inline-flex; align-items: center; gap: 9px;
-      padding: 10px 16px; border-radius: 999px;
-      background: var(--surface);
-      box-shadow: 6px 6px 14px var(--shadow-dark), -6px -6px 14px var(--shadow-light);
-      color: var(--muted); font-size: 11px; font-weight: 800;
-      letter-spacing: .2em; text-transform: uppercase;
-    }
-    .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--fuchsia); box-shadow: 0 0 0 4px rgba(232,63,145,.12); }
-    .card {
-      position: relative; overflow: hidden;
-      margin-top: 34px; padding: clamp(34px, 7vw, 68px) 24px;
-      border: 1px solid rgba(255,255,255,.6); border-radius: 34px;
-      background: linear-gradient(145deg, #faeeee, #f1e2e4);
-      box-shadow: 18px 18px 38px var(--shadow-dark), -18px -18px 38px var(--shadow-light);
-    }
-    .orb {
-      position: absolute; width: 180px; height: 180px; border-radius: 50%;
-      filter: blur(1px); opacity: .12; pointer-events: none;
-    }
-    .orb.one { top: -100px; left: -55px; background: var(--orange); }
-    .orb.two { right: -90px; bottom: -110px; background: var(--fuchsia); width: 240px; height: 240px; }
-    .mark {
-      width: 74px; height: 74px; margin: 0 auto 28px; display: grid; place-items: center;
-      border-radius: 24px; color: white; font-size: 30px; font-weight: 900;
-      background: linear-gradient(135deg, var(--orange), var(--fuchsia));
-      box-shadow: 8px 8px 18px rgba(202,104,115,.28), -5px -5px 14px rgba(255,255,255,.85);
-    }
-    h1 {
-      margin: 0; font-size: clamp(42px, 9vw, 76px); line-height: 1.02;
-      letter-spacing: -.065em; font-weight: 850;
-    }
-    h1 span {
-      color: transparent; background: linear-gradient(100deg, var(--orange-dark), var(--fuchsia));
-      -webkit-background-clip: text; background-clip: text;
-    }
-    .subtitle { max-width: 430px; margin: 20px auto 0; color: var(--muted); font-size: 15px; line-height: 1.75; }
-    .actions { display: flex; justify-content: center; flex-wrap: wrap; gap: 14px; margin-top: 34px; }
-    .button {
-      min-width: 148px; padding: 15px 22px; border: 0; border-radius: 16px;
-      font: inherit; font-size: 13px; font-weight: 800; cursor: pointer;
-      transition: transform .2s ease, box-shadow .2s ease;
-    }
-    .button:hover { transform: translateY(-2px); }
-    .button.primary {
-      color: white; background: linear-gradient(110deg, var(--orange), var(--fuchsia));
-      box-shadow: 7px 7px 16px rgba(204,103,119,.3), -5px -5px 13px rgba(255,255,255,.85);
-    }
-    .button.secondary {
-      color: var(--muted); background: var(--surface);
-      box-shadow: 7px 7px 15px var(--shadow-dark), -7px -7px 15px var(--shadow-light);
-    }
-    .status { min-height: 22px; margin-top: 24px; color: var(--fuchsia); font-size: 12px; font-weight: 700; }
-    footer { margin-top: 25px; color: #ad96a3; font-size: 11px; letter-spacing: .12em; text-transform: uppercase; }
-    @media (prefers-reduced-motion: reduce) { *, *::before, *::after { transition: none !important; } }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Football App — index des maquettes</title>
+<style>
+*{box-sizing:border-box;margin:0}
+body{font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:#F4F2EC;color:#1E1E24;padding:24px 14px 60px}
+main{max-width:720px;margin:0 auto}
+h1{font-size:22px}
+.sub{color:#5A5A66;font-size:14px;margin:6px 0 18px}
+.warn{background:#fff;border:1px solid #D9D5C9;border-left:4px solid #1E1E24;border-radius:10px;padding:10px 12px;font-size:13px;color:#44444F;margin-bottom:18px}
+.card{display:block;background:#fff;border:1px solid #D9D5C9;border-radius:14px;padding:14px;margin-bottom:12px;color:inherit;text-decoration:none}
+.card:focus-visible,.card:hover{border-color:#1E1E24}
+.card h2{font-size:17px}
+.meta{font-size:12px;color:#6A6A76;margin:2px 0 8px}
+.card p{font-size:14px;color:#33333D}
+.sw{display:flex;gap:6px;margin-top:10px}
+.sw i{width:28px;height:28px;border-radius:8px;border:1px solid rgba(0,0,0,.15)}
+.go{display:inline-block;margin-top:10px;font-size:14px;font-weight:700}
+h3{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:#6A6A76;margin:26px 0 8px}
+.arch a{font-size:14px}
+</style>
 </head>
 <body>
-  <main class="shell">
-    <div class="eyebrow"><span class="dot"></span> Mini design experiment</div>
-    <section class="card" aria-labelledby="title">
-      <span class="orb one"></span><span class="orb two"></span>
-      <div class="mark" aria-hidden="true">✦</div>
-      <h1 id="title">Hello <span>World.</span></h1>
-      <p class="subtitle">Une première maquette HTML en neumorphism, avec une palette chaleureuse orange et fuchsia. Simple, douce et responsive.</p>
-      <div class="actions">
-        <button class="button primary" id="helloButton" type="button">Say hello <span aria-hidden="true">↗</span></button>
-        <button class="button secondary" id="resetButton" type="button">Reset</button>
-      </div>
-      <p class="status" id="status" role="status" aria-live="polite"></p>
-    </section>
-    <footer>HTML · CSS · JavaScript · Neumorphism</footer>
-  </main>
-  <script>
-    const status = document.querySelector("#status");
-    document.querySelector("#helloButton").addEventListener("click", () => {
-      status.textContent = "Hello Nick — nice to see you! ✨";
-    });
-    document.querySelector("#resetButton").addEventListener("click", () => {
-      status.textContent = "";
-    });
-  </script>
+<main>
+<h1>Football App — maquettes</h1>
+<p class="sub" id="upd">Index des designs</p>
+<div class="warn" id="note">Chargement…</div>
+<div id="list"></div>
+<h3>Archive</h3>
+<div class="arch" id="arch"></div>
+</main>
+<script>
+fetch('designs.json').then(r=>r.json()).then(d=>{
+ document.getElementById('upd').textContent='Mis à jour le '+d.updated+' · '+d.designs.length+' designs';
+ document.getElementById('note').textContent=d.note;
+ document.getElementById('list').innerHTML=d.designs.map(x=>'<a class="card" href="'+x.path+'"><h2>'+x.title+'</h2><div class="meta">'+x.status+' · '+x.date+' · '+x.author+'</div><p>'+x.summary+'</p><div class="sw">'+x.palette.map(c=>'<i style="background:'+c+'"></i>').join('')+'</div><span class="go">Ouvrir →</span></a>').join('');
+ document.getElementById('arch').innerHTML=d.archive.map(x=>'<a href="'+x.path+'">'+x.title+'</a> <span class="meta">'+x.date+' · '+x.author+'</span>').join('<br>');
+}).catch(e=>{document.getElementById('note').textContent='Impossible de charger designs.json : '+e;});
+</script>
 </body>
 </html>
